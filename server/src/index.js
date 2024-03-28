@@ -17,15 +17,15 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 // Template engine
 
-app.engine(
+   app.engine(
   'hbs',
-  handlebars.engine({
-    extname: '.hbs',
-    helpers: {
+     handlebars.engine({
+       extname: '.hbs',
+       helpers: {
       isEqual: (a, b) => a === b,
-    },
+       },
   }),
-);
+      )
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources', 'views'));
 
