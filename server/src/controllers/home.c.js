@@ -1,10 +1,10 @@
 // controllers/home.c.js
 
 class HomeController {
-        getHomePage = async (req, res) => {
+  getHomePage = async (req, res) => {
     // res.status(200).json({ message: 'Hello world!' });
-            res.render('home')
-        }   
+              res.render('home')
+  };
 }
 
 module.exports = new HomeController();
